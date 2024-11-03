@@ -1,0 +1,204 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f2f2f2;
+        margin-top: 60px; 
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgb(44, 86, 91);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    nav ul li.Left {
+        margin-right: auto;
+    }
+
+    nav ul li.Right {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav ul li:hover {
+        border-bottom: 1px solid white;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: antiquewhite;
+        padding: 0 10px;
+    }
+
+    .login_box {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 100px; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(234, 227, 227);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .login_box p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .cred {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .in {
+        width: 100%;
+        height: 30px;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    .cred i {
+        font-size: 1.2rem;
+        margin-right: 10px;
+        color: #333;
+    }
+
+    .Lbutton {
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        background-color: rgb(44, 86, 91);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .Lbutton:hover {
+        background-color: rgb(34, 66, 71);
+    }
+
+    .Remem {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .chx {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .forgot {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: rgb(44, 86, 91);
+        text-decoration: none;
+    }
+
+    .forgot:hover {
+        text-decoration: underline;
+    }
+
+    
+    @media (max-width: 500px) {
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            padding: 10px 0;
+        }
+
+        .login_box {
+            margin-top: 70px;
+            width: 90%;
+        }
+
+        .login_box p {
+            font-size: 1.5rem;
+        }
+
+        .cred i {
+            font-size: 1rem;
+        }
+
+        .in {
+            height: 35px;
+            font-size: 0.9rem;
+        }
+
+        .Lbutton {
+            width: 100%;
+            max-width: none;
+            height: 35px;
+            font-size: 0.9rem;
+        }
+    }
+
+    
+    @media (max-width: 380px) {
+        header {
+            padding: 5px 0;
+        }
+
+        .login_box {
+            margin-top: 80px; 
+            padding: 15px;
+        }
+
+        .login_box p {
+            font-size: 1.3rem;
+        }
+
+        .in {
+            height: 30px;
+            font-size: 0.85rem;
+        }
+
+        .Lbutton {
+            height: 30px;
+            font-size: 0.85rem;
+        }
+    }
